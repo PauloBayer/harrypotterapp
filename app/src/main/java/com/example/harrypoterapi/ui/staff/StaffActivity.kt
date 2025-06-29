@@ -19,12 +19,24 @@ class StaffActivity : AppCompatActivity() {
 
         binding.btnFiltrar.setOnClickListener {
             val filter = binding.etNome.text.toString().trim()
+
             lifecycleScope.launch {
-                val list = repo.staff()
-                val result = if (filter.isEmpty()) list
-                else list.filter { it.name.contains(filter, ignoreCase = true) }
-                binding.tvStaff.text = result.joinToString("\n\n") { s ->
-                    "Nome: ${s.name}\nEspécie: ${s.species}\nCasa: ${s.house ?: "—"}"
+                val staffList = repo.staff()
+                val result = if (filter.isEmpty()) staffList
+                else staffList.filter { it.name.contains(filter, ignoreCase = true) }
+
+                binding.tvStaff.text = result.joinToString("\n\n") { member ->
+                    val altNames = if (member.alternateNames.isEmpty())
+                        "—"
+                    else
+                        member.alternateNames.joinToString()
+
+                    """
+                    Nome: ${member.name}
+                    Espécie: ${member.species}
+                    Casa: ${member.house ?: "—"}
+                    Nomes alternativos: $altNames
+                    """.trimIndent()
                 }
             }
         }
