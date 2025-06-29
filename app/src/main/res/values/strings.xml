@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">HarryPotterApi</string>
+
+    <!-- MainActivity -->
+    <string name="titulo_main">Catálogo do Mundo de Harry Potter</string>
+    <string name="subtitulo_main">Consulte personagens, professores, alunos e feitiços desse mundo mágico</string>
+    <string name="personagem_por_id">Personagem por ID</string>
+    <string name="professores">Professores</string>
+    <string name="estudantes">Estudantes por Casa</string>
+    <string name="feitiços">Feitiços</string>
+    <string name="sair">Sair</string>
+
+    <!-- Ações genéricas -->
+    <string name="buscar">Buscar</string>
+    <string name="foto_personagem">Foto do personagem</string>
+    <string name="descricao_feitiço">Descrição do feitiço</string>
+</resources>

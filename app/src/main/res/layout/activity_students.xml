@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/cgHouses"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:singleSelection="true"
+        app:selectionRequired="true"
+        app:chipSpacing="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chGryffindor"
+            style="@style/Widget.Material3.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Grifinória"
+            android:checkable="true"
+            app:chipBackgroundColor="@color/gryffindor_red"/>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chSlytherin"
+            style="@style/Widget.Material3.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sonserina"
+            android:checkable="true"
+            app:chipBackgroundColor="@color/slytherin_green"/>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chRavenclaw"
+            style="@style/Widget.Material3.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Corvinal"
+            android:checkable="true"
+            app:chipBackgroundColor="@color/ravenclaw_blue"/>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chHufflepuff"
+            style="@style/Widget.Material3.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lufa-Lufa"
+            android:checkable="true"
+            app:chipBackgroundColor="@color/hufflepuff_yellow"/>
+    </com.google.android.material.chip.ChipGroup>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnListar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buscar"
+        app:layout_constraintTop_toBottomOf="@id/cgHouses"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="12dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvStudents"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/btnListar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
