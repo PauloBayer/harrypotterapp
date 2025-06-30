@@ -1,7 +1,37 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
     <style name="Base.Theme.HarryPoterAPI" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="colorPrimary">@color/dourado_hogwarts</item>
+        <item name="colorOnPrimary">@color/preto</item>
+        <item name="colorPrimaryContainer">@color/dourado_escuro</item>
+        <item name="colorOnPrimaryContainer">@color/branco</item>
+        
+        <item name="colorSecondary">@color/azul_ravenclaw_claro</item>
+        <item name="colorOnSecondary">@color/preto</item>
+        <item name="colorSecondaryContainer">@color/azul_ravenclaw</item>
+        <item name="colorOnSecondaryContainer">@color/branco</item>
+        
+        <item name="colorTertiary">@color/verde_slytherin_claro</item>
+        <item name="colorOnTertiary">@color/preto</item>
+        <item name="colorTertiaryContainer">@color/verde_slytherin</item>
+        <item name="colorOnTertiaryContainer">@color/branco</item>
+        
+        <item name="colorError">@color/vermelho_sistema</item>
+        <item name="colorOnError">@color/branco</item>
+        
+        <item name="colorSurface">@color/preto</item>
+        <item name="colorOnSurface">@color/branco</item>
+        <item name="colorSurfaceVariant">@color/cinza_escuro</item>
+        <item name="colorOnSurfaceVariant">@color/cinza_claro</item>
+        
+        <item name="android:colorBackground">@color/preto</item>
+        <item name="android:textColorPrimary">@color/branco</item>
+        
+        <item name="colorOutline">@color/cinza_medio</item>
+        <item name="colorOutlineVariant">@color/cinza_escuro</item>
+        
+        <item name="android:statusBarColor">@color/preto</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:navigationBarColor">@color/preto</item>
+        <item name="android:windowLightNavigationBar">false</item>
     </style>
 </resources>

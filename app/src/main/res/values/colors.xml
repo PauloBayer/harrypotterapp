@@ -1,13 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
-    <color name="purple_200">#BB86FC</color>
-    <color name="purple_500">#6200EE</color>
-    <color name="purple_700">#3700B3</color>
-    <color name="teal_200">#03DAC5</color>
-    <color name="gryffindor_red">#B71C1C</color>
-    <color name="slytherin_green">#1B5E20</color>
-    <color name="ravenclaw_blue">#0D47A1</color>
-    <color name="hufflepuff_yellow">#F9A825</color>
+    <!-- Cores básicas -->
+    <color name="preto">#FF000000</color>
+    <color name="branco">#FFFFFFFF</color>
+    <color name="branco_gelo">#F8F9FA</color>
+    <color name="cinza_claro">#F5F5F7</color>
+    <color name="cinza_medio">#E5E5E7</color>
+    <color name="cinza_escuro">#8E8E93</color>
+    
+    <!-- Cores principais Harry Potter -->
+    <color name="dourado_hogwarts">#D4AF37</color>
+    <color name="dourado_escuro">#B8860B</color>
+    <color name="azul_ravenclaw">#0E4B99</color>
+    <color name="azul_ravenclaw_claro">#5DADE2</color>
+    <color name="verde_slytherin">#2D5016</color>
+    <color name="verde_slytherin_claro">#6A994E</color>
+    <color name="vermelho_grifinoria">#740001</color>
+    <color name="vermelho_grifinoria_claro">#C8102E</color>
+    <color name="amarelo_lufa_lufa">#ECB939</color>
+    
+    <!-- Tons neutros macOS-like -->
+    <color name="azul_sistema">#007AFF</color>
+    <color name="azul_sistema_claro">#34AADC</color>
+    <color name="verde_sistema">#34C759</color>
+    <color name="laranja_sistema">#FF9500</color>
+    <color name="vermelho_sistema">#FF3B30</color>
+    
+    <!-- Gradientes e sombras -->
+    <color name="sombra_leve">#1A000000</color>
+    <color name="sombra_media">#33000000</color>
+    <color name="overlay_escuro">#66000000</color>
+    
+    <!-- Cores de texto -->
+    <color name="texto_primario">#1D1D1F</color>
+    <color name="texto_secundario">#86868B</color>
+    <color name="texto_sobre_escuro">#FFFFFF</color>
 </resources>

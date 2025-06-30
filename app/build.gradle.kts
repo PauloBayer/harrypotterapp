@@ -64,4 +64,13 @@ dependencies {
 
     // Coil p/ carregar imagens
     implementation("io.coil-kt:coil:2.5.0")
+    
+    // CardView para layouts modernos
+    implementation("androidx.cardview:cardview:1.0.0")
+    
+    // Shimmer para loading effects
+    implementation("com.facebook.shimmer:shimmer:0.5.0")
+    
+    // Lottie para animações
+    implementation("com.airbnb.android:lottie:6.2.0")
 }

@@ -1,9 +1,87 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
     <style name="Base.Theme.HarryPoterAPI" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/dourado_hogwarts</item>
+        <item name="colorOnPrimary">@color/preto</item>
+        <item name="colorPrimaryContainer">@color/dourado_escuro</item>
+        <item name="colorOnPrimaryContainer">@color/branco</item>
+        
+        <item name="colorSecondary">@color/azul_ravenclaw</item>
+        <item name="colorOnSecondary">@color/branco</item>
+        <item name="colorSecondaryContainer">@color/azul_ravenclaw_claro</item>
+        <item name="colorOnSecondaryContainer">@color/preto</item>
+        
+        <item name="colorTertiary">@color/verde_slytherin</item>
+        <item name="colorOnTertiary">@color/branco</item>
+        <item name="colorTertiaryContainer">@color/verde_slytherin_claro</item>
+        <item name="colorOnTertiaryContainer">@color/preto</item>
+        
+        <item name="colorError">@color/vermelho_sistema</item>
+        <item name="colorOnError">@color/branco</item>
+        
+        <item name="colorSurface">@color/branco_gelo</item>
+        <item name="colorOnSurface">@color/texto_primario</item>
+        <item name="colorSurfaceVariant">@color/cinza_claro</item>
+        <item name="colorOnSurfaceVariant">@color/texto_secundario</item>
+        
+        <item name="android:colorBackground">@color/branco_gelo</item>
+        <item name="android:textColorPrimary">@color/texto_primario</item>
+        
+        <item name="colorOutline">@color/cinza_medio</item>
+        <item name="colorOutlineVariant">@color/cinza_claro</item>
+        
+        <item name="android:statusBarColor">@color/branco_gelo</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:navigationBarColor">@color/branco_gelo</item>
+        <item name="android:windowLightNavigationBar">true</item>
     </style>
 
     <style name="Theme.HarryPoterAPI" parent="Base.Theme.HarryPoterAPI" />
+    
+    <style name="EstiloBotaoPrimario" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/dourado_hogwarts</item>
+        <item name="android:textColor">@color/preto</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="android:minHeight">56dp</item>
+        <item name="android:elevation">4dp</item>
+    </style>
+    
+    <style name="EstiloBotaoSecundario" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="strokeColor">@color/dourado_hogwarts</item>
+        <item name="android:textColor">@color/dourado_hogwarts</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="android:minHeight">56dp</item>
+        <item name="strokeWidth">2dp</item>
+    </style>
+    
+    <style name="EstiloTituloPrincipal">
+        <item name="android:textSize">32sp</item>
+        <item name="android:textColor">@color/texto_primario</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    
+    <style name="EstiloSubtitulo">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/texto_secundario</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+    
+    <style name="EstiloCartao">
+        <item name="cardCornerRadius">16dp</item>
+        <item name="cardElevation">8dp</item>
+        <item name="cardBackgroundColor">@color/branco</item>
+        <item name="android:layout_margin">8dp</item>
+    </style>
+    
+    <style name="EstiloChipCasa" parent="Widget.Material3.Chip.Filter">
+        <item name="android:textColor">@color/branco</item>
+        <item name="android:textStyle">bold</item>
+        <item name="chipCornerRadius">20dp</item>
+        <item name="chipMinHeight">40dp</item>
+        <item name="android:textSize">14sp</item>
+    </style>
 </resources>
